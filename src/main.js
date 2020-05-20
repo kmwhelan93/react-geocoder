@@ -27,13 +27,13 @@ class Geocoder extends Component {
     this.onResult = this.onResult.bind(this);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({ inputValue: this.props.defaultInputValue });
   }
   componentDidMount() {
     if (this.props.focusOnMount) ReactDOM.findDOMNode(this.refs.input).focus();
   }
-  componentWillReceiveProps(props) {
+  UNSAFE_componentWillReceiveProps(props) {
     if (props.defaultInputValue !== this.props.inputValue) {
       this.setState({ inputValue: props.defaultInputValue });
     }
