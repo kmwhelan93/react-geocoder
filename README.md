@@ -1,7 +1,7 @@
-# react-geocoder
+# react-geocoder-autocomplete-country
 
 ```
-npm install react-geocoder-autocomplete
+npm install react-geocoder-autocomplete-country
 ```
 
 A geocoder component using Mapbox, modified to be better for regular form autocomplete
