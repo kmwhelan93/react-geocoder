@@ -10,10 +10,7 @@
     "buildExample": "browserify -o example/bundle.js -e example/site.js -t babelify",
     "dist": "npm-run-all babel buildExample"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:kmwhelan93/react-geocoder-autocomplete.git"
-  },
+  "repository": "git@github.com:Pritch13/react-geocoder-autocomplete.git",
   "browserify": {
     "transform": [
       "babelify"
@@ -45,8 +42,8 @@
   },
   "dependencies": {
     "babelify": "^6.0.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-flip-move": "^2.9.1",
     "xhr": "^1.17.0"
   },
