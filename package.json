@@ -10,7 +10,10 @@
     "buildExample": "browserify -o example/bundle.js -e example/site.js -t babelify",
     "dist": "npm-run-all babel buildExample"
   },
-  "repository": "git@github.com:Pritch13/react-geocoder-autocomplete.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Pritch13/react-geocoder-autocomplete.git"
+  },
   "browserify": {
     "transform": [
       "babelify"
