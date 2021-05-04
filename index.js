@@ -39,6 +39,7 @@ class Geocoder extends Component {
     accessToken,
     proximity,
     bbox,
+    countries,
     types,
     query,
     callback
@@ -55,6 +56,7 @@ class Geocoder extends Component {
       accessToken +
       (proximity ? "&proximity=" + proximity : "") +
       (bbox ? "&bbox=" + bbox : "") +
+      (countries ? "&country=" + countries : "") +
       (types ? "&types=" + encodeURIComponent(types) : "");
     xhr(
       {
@@ -90,6 +92,7 @@ class Geocoder extends Component {
         this.props.accessToken,
         this.props.proximity,
         this.props.bbox,
+        this.props.countries,
         this.props.types,
         value,
         this.onResult
@@ -277,6 +280,7 @@ Geocoder.defaultProps = {
   source: "mapbox.places",
   proximity: "",
   bbox: "",
+  countries: "",
   types: "",
   onSuggest: function onSuggest() {},
   onInputChange: function onInputChange() {},
@@ -299,6 +303,7 @@ Geocoder.propTypes = {
   accessToken: PropTypes.string.isRequired,
   proximity: PropTypes.string,
   bbox: PropTypes.string,
+  countries: PropTypes.string,
   showLoader: PropTypes.bool,
   focusOnMount: PropTypes.bool,
   types: PropTypes.string
