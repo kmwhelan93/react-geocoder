@@ -1,6 +1,6 @@
 {
-  "name": "react-geocoder-autocomplete-country",
-  "version": "3.1.4",
+  "name": "react-geocoder-autocomplete",
+  "version": "3.1.0",
   "description": "a mapbox geocoder component for autocomplete",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Pritch13/react-geocoder-autocomplete.git"
+    "url": "git@github.com:kmwhelan93/react-geocoder-autocomplete.git"
   },
   "browserify": {
     "transform": [
@@ -30,9 +30,9 @@
   "author": "Tom MacWright",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pritch13/react-geocoder-autocomplete/issues"
+    "url": "https://github.com/kmwhelan93/react-geocoder-autocomplete/issues"
   },
-  "homepage": "https://github.com/Pritch13/react-geocoder-autocomplete",
+  "homepage": "https://github.com/kmwhelan93/react-geocoder-autocomplete",
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",

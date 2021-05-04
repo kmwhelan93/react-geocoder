@@ -29,8 +29,6 @@ class Example extends Component {
             onSelect={this.onSelect}
             showLoader={false}
             onInputChange={this.onInputChange}
-            countries={"us"}
-            types={"address"}
           />
         </div>
         {this.state.value && (
